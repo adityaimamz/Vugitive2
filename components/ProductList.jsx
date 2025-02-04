@@ -62,7 +62,7 @@ export default function ProductList() {
   return (
     <div className="bg-white uppercase">
       <div className="mx-auto max-w-7xl overflow-hidden px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-      <h2 className="text-[40px] font-bold tracking-tight text-black uppercase mb-5">New Arrivals</h2>
+        <h2 className="text-[40px] font-bold tracking-tight text-black uppercase mb-5">New Arrivals</h2>
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-8 text-center">
           {products.map((product) => (
             <a key={product.id} href={product.href} className="group text-sm">

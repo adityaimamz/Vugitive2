@@ -1,5 +1,5 @@
-'use client';
-import { useRef, useEffect } from 'react';
+"use client";
+import { useRef, useEffect } from "react";
 import {
   motion,
   useScroll,
@@ -8,9 +8,9 @@ import {
   useVelocity,
   useAnimationFrame,
   useMotionValue,
-} from 'framer-motion';
-import { wrap } from '@motionone/utils';
-import { cn } from '@/lib/utils';
+} from "framer-motion";
+import { wrap } from "@motionone/utils";
+import { cn } from "@/lib/utils";
 
 interface ParallaxProps {
   children: string;
@@ -71,15 +71,23 @@ export default function ScrollBaseAnimation({
   });
 
   return (
-    <div className='overflow-hidden whitespace-nowrap flex flex-nowrap'>
+    <div className="overflow-hidden whitespace-nowrap flex flex-nowrap">
       <motion.div
-        className='flex whitespace-nowrap gap-10 flex-nowrap'
+        className="flex whitespace-nowrap gap-10 flex-nowrap"
         style={{ x }}
       >
-        <span className={cn(`block lg:text-[11vw] text-[25vw]`, clasname)}>{children}</span>
-        <span className={cn(`block lg:text-[11vw] text-[25vw]`, clasname)}>{children}</span>
-        <span className={cn(`block lg:text-[11vw] text-[25vw]`, clasname)}>{children}</span>
-        <span className={cn(`block lg:text-[11vw] text-[25vw]`, clasname)}>{children}</span>
+        <span className={cn(`block lg:text-[11vw] text-[25vw]`, clasname)}>
+          {children}
+        </span>
+        <span className={cn(`block lg:text-[11vw] text-[25vw]`, clasname)}>
+          {children}
+        </span>
+        <span className={cn(`block lg:text-[11vw] text-[25vw]`, clasname)}>
+          {children}
+        </span>
+        <span className={cn(`block lg:text-[11vw] text-[25vw]`, clasname)}>
+          {children}
+        </span>
       </motion.div>
     </div>
   );

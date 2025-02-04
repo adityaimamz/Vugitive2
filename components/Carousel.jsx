@@ -23,7 +23,7 @@ function Carousel() {
         className="flex will-change-transform cursor-grab active:cursor-grabbing">
         {cards.slice(0, 8)?.map((itemData, index) => {
           return (
-            <motion.div className="min-w-[20rem] min-h-[25rem] p-2">
+            <motion.div key={index} className="min-w-[20rem] min-h-[25rem] p-2">
               <Image
                 src={itemData?.url}
                 width={400}

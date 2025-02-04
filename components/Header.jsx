@@ -194,7 +194,6 @@ export default function Example() {
 
   return (
     <div className="bg-white uppercase sticky top-0 z-50">
-      {/* Mobile menu */}
       <Dialog open={open} onClose={setOpen} className="relative z-40 lg:hidden">
         <DialogBackdrop
           transition
@@ -217,7 +216,6 @@ export default function Example() {
               </button>
             </div>
 
-            {/* Links */}
             <TabGroup className="mt-2">
               <div className="border-b border-gray-200">
                 <TabList className="-mb-px flex space-x-8 px-4">
@@ -311,7 +309,6 @@ export default function Example() {
                         transition
                         className="absolute inset-x-0 top-full transition data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
                       >
-                        {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
                         <div aria-hidden="true" className="absolute inset-0 top-1/2 bg-white shadow" />
 
                         <div className="relative bg-white">

@@ -11,7 +11,7 @@ function index() {
           scrollDependent={true}
           clasname='font-bold tracking-[-0.07em] leading-[90%]'
         >
-        Vugitive: Elevate Your Style, Elevate Your Life
+          Vugitive: Elevate Your Style, Elevate Your Life
         </ScrollBaseAnimation>
       </div>
     </>
